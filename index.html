@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ランダムナンバー生成</title>
+</head>
+<body>
+    <h1>ランダムで1〜100の数字を表示</h1>
+    <button onclick="generateRandomNumber()">ランダムな数字を表示</button>
+    <p id="result">ここに数字が表示されるで！</p>
+
+    <script>
+        // JavaScriptの関数
+        function generateRandomNumber() {
+            // 1〜100のランダムな整数を生成
+            let randomNumber = Math.floor(Math.random() * 100) + 1;
+            // 結果を表示する
+            document.getElementById("result").innerText = "ランダムな数字: " + randomNumber;
+        }
+    </script>
+</body>
+</html>
